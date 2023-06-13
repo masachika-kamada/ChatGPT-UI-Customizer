@@ -37,7 +37,8 @@ def main():
         "icon",
         "background.js",
         "manifest.json",
-        "script.js"
+        "script.js",
+        "style.css"
     ]
     create_zip(".", "extension.zip", include_items)
 
