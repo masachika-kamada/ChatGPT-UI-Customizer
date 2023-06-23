@@ -9,8 +9,7 @@ function customizePage() {
 
   // Remove content using the specified XPath
   const removeContentXPaths = [
-    '//*[@id="__next"]/div[2]/div[2]/div/main/div[3]/div/span',
-    '//*[@id="__next"]/div[2]/div[2]/div/main/div[3]/div[2]/span'
+    '//*[@id="__next"]/div[1]/div[2]/div/main/div[3]/div/span',
   ];
 
   for (const xpath of removeContentXPaths) {
@@ -24,7 +23,7 @@ function customizePage() {
   // Assuming that the target element has the classes "absolute", "bottom-0", and "left-0"
   const targetElement = document.querySelector('.absolute.bottom-0.left-0');
   if (targetElement) {
-    targetElement.style.width = 'calc(100% - 0.5rem)';  // Adjust the width considering the scrollbar width
+    targetElement.style.width = 'calc(100% - 1rem)';  // Adjust the width considering the scrollbar width
   }
 }
 
